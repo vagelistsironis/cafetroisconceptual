@@ -1,0 +1,43 @@
+
+a.no-underline {
+    text-decoration: none;
+}
+.photo-container {
+  text-align: center; /* Κείμενο κεντραρισμένο οριζόντια */
+  margin-bottom: 20px; /* Απόσταση μεταξύ των photo-container */
+}
+
+.photo-container img {
+  width: 85%; /* Επιθυμητό πλάτος της εικόνας (συμπληρώνετε το % που επιθυμείτε) */
+  height: auto; /* Αυτόματο ύψος για να διατηρηθεί η αναλογία */
+  padding: 5px;
+  object-fit: cover; /* Τοποθετεί την εικόνα μέσα στον χώρο της */
+}
+.bordered-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.photo-container .bordered {
+  
+  width: 85%;
+  background-color: rgba(135, 16, 16, 0.7); /* Χρώμα φόντου */
+  color: white; /* Χρώμα κειμένου */
+  text-align: center;
+  border: 1px solid white; /* Περίγραμμα */
+  font-size: 18px; /* Μέγεθος γραμματοσειράς */
+  padding: 10px; /* Απόσταση ανάμεσα στο κείμενο και τα περιθώρια του bordered div */
+ 
+}
+.photo-container .bordered:hover {
+  background-color: rgba(255, 255, 255, 0.6); /* Χρώμα φόντου κατά το hover */
+  color: red; /* Χρώμα κειμένου κατά το hover */
+  font-size: 20px; /* Μέγεθος γραμματοσειράς κατά το hover */
+  transform: scale(1.05); /* Μεγέθυνση του περιγράμματος κατά το hover */
+  transition: all 0.3s ease; /* Εφέ μετάβασης για ομαλή αλλαγή κατά το hover */
+}
+.photo-container img:hover {
+  opacity: 0.7; /* Μειώνει τη διαφάνεια σε 70% κατά το hover */
+}
+

@@ -1,0 +1,105 @@
+
+* {
+      box-sizing: border-box;
+    }
+    body {
+      position:relative;
+      background-image:url('galleryimages/photo-1597043851759-3b383a6d1c14.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;  
+      background-size: cover;
+      margin: 0;
+      font-family: "Times New Roman", Times, serif;
+    }
+    header, footer{
+      font-family: "Times New Roman", Times, serif;
+      background-color: rgba(135, 16, 16, 0.7); 
+      color: #fff;
+      padding: 10px ;
+      text-align: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      height: auto;
+    }
+    .header-image {
+    display: block;
+    margin: 0 auto; /* Κεντράρει την εικόνα οριζόντια */
+    width: 200px; /* Μέγιστο πλάτος της εικόνας είναι 100% του περιεχομένου του header */
+    height:auto;
+    object-fit: cover;
+}
+      
+    nav {
+      text-align: center;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline-block;
+    }
+    nav ul li a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 10px 1px;
+    }
+    
+    .container {
+      max-width:800px;
+      font-family: "Times New Roman", Times, serif;
+      font-size:20px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+   .container.sub-class1 {
+    font-size: 16px; /* Μεγεθυμένο μέγεθος γραμματοσειράς για συσκευές με μικρότερες οθόνες */
+  }
+    
+    .white-bg {
+    background-color:rgba(135, 16, 16, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .gallery-item {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-color: #ccc;
+    }
+   
+@media screen and (max-width: 413px) {
+   
+  .container.sub-class {
+    font-size: 14px; /* Μεγεθυμένο μέγεθος γραμματοσειράς για συσκευές με μικρότερες οθόνες */
+  }
+  .container.sub-class1 {
+    font-size: 12px; /* Μεγεθυμένο μέγεθος γραμματοσειράς για συσκευές με μικρότερες οθόνες */
+  }
+  .carousel .item img {
+    display:flex;
+    object-fit: cover;
+    height: 600px; /* Προσαρμόστε το ύψος όπως επιθυμείτε */
+    width: 100%;
+   }
+}
+@media screen and (max-width: 320px) {
+  body {
+    font-size: 16px;
+    /* άλλοι κανόνες στυλ εδώ */
+  }
+  .container.sub-class {
+    font-size: 14px; /* Μεγεθυμένο μέγεθος γραμματοσειράς για συσκευές με μικρότερες οθόνες */
+  }
+  .container.sub-class1 {
+    font-size: 11px; /* Μεγεθυμένο μέγεθος γραμματοσειράς για συσκευές με μικρότερες οθόνες */
+  }
+}

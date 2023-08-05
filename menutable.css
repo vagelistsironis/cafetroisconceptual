@@ -1,0 +1,25 @@
+
+#menutable {
+  font-family: "Times New Roman", Times, serif;
+  border-collapse: collapse;
+  width: 100%;
+  height:500px;
+  color: white;
+}
+
+#menutable td, #menutable th {
+  
+  padding: 8px;
+}
+
+#menutable tr{background-color: rgba(135, 16, 16, 0.7);border: 1px solid white; }
+#menutable th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: white;
+}
+
+
+
+
